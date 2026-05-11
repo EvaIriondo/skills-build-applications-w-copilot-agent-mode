@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OctoFit To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🐙 OctoFit To-Do List</h1>
+            <p>Stay productive and keep track of your tasks</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <input 
+                    type="text" 
+                    id="todoInput" 
+                    placeholder="Add a new task..."
+                    class="todo-input"
+                />
+                <button id="addBtn" class="add-btn">Add Task</button>
+            </div>
+
+            <div class="filter-section">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="active">Active</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+
+            <div id="todoList" class="todo-list"></div>
+
+            <div class="stats-section">
+                <p>Total: <span id="totalCount">0</span></p>
+                <p>Completed: <span id="completedCount">0</span></p>
+                <button id="clearBtn" class="clear-btn">Clear Completed</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
